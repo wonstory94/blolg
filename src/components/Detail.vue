@@ -5,6 +5,7 @@
       <h5>{{blog[$route.params.id].title}}</h5>
       <p>{{blog[$route.params.id].content}}</p>
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
