@@ -39,8 +39,6 @@
     </div>
   </div>
 </nav>
-<router-link to="/">홈페이지</router-link>
-<router-link to="/list">리스트페이지</router-link>
 
 <div class="mt-4">
   <router-view :blog="blog"></router-view>

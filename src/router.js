@@ -15,13 +15,18 @@ const routes = [
     component: List,
   },
   {
-    path: "/detail:id", //detail/아무문자
+    //   아무문가 아니라 아무 숫자로 해주세요는 아래 코드
+    // path: "/detail/:id(\\d+)", 정규식 문자로 적용 
+    // path: "/detail/:id*", 누군가가 / 어쩌구 /어쩌구 /어쩌구 로 검색할때
+    path: "/detail/:id", //detail/:아무문자
     component: Detail,
   },
 //   {
-//     path: "/list",
-//     component: List.Vue,
+//     //   404페이지
+//     path: "/:qweㅇ로헝qwe", //detail/:아무문자
+//     component: 404,
 //   },
+
 ];
 
 const router = createRouter({
